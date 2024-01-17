@@ -1,29 +1,40 @@
+/* Resetting some default styles */
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Ubuntu', sans-serif;
     box-sizing: border-box;
 }
+
 body {
-    background-color:#222222;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #292c36;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
 }
 
 .card {
     width: 90%;
-    max-width: 470px;
-    background:linear-gradient(135deg,#00feba,#5b548a);
+    max-width: 400px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
     color: #fff;
-    margin: 100px auto 0;
+    margin: 50px auto;
     border-radius: 20px;
-    padding: 40px 35px;
+    padding: 30px;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .search {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    
+    margin-bottom: 20px;
 }
 
 .search input {
@@ -31,24 +42,86 @@ body {
     outline: 0;
     background-color: #ebfffc;
     color: #555;
-    padding: 10px 25px;
-    height: 60px;
-    border-radius: 30px;
+    padding: 10px 15px;
+    height: 40px;
+    border-radius: 20px;
     flex: 1;
-    margin-right: 16px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .search button {
     border: 0;
     outline: 0;
     background-color: #ebfffc;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     cursor: pointer;
 }
 
 .search img {
-    width: 16px;
+    width: 20px;
+}
+
+.error {
+    display: none;
+    color: #ff6868;
+    margin-bottom: 20px;
+}
+
+/* Hide weather information by default */
+.weather, .details {
+    display: none;
+}
+
+#weather-icon {
+    width: 100px;
+    margin-top: 20px;
+}
+
+.weather h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.weather h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.humidity, .wind {
+    font-size: 18px;
+    margin-top: -2px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+    .card {
+        width: 80%;
+    }
+
+    .search input {
+        font-size: 14px;
+    }
 }
