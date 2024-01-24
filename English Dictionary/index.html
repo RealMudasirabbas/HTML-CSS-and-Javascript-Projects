@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>English Dictionary</title>
+    <meta name="description" content="An online English dictionary for quick word definitions.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,8 +12,13 @@
         <div class="dictionary">
             <div class="input-search">
                 <h1>English Dictionary</h1>
-                <input type="text"  placeholder="Type the word here" id="search">
+                <form id="searchForm">
+                <input type="text" placeholder="Type the word here" id="search">
                 <button type="submit">Search</button>
+                </form>
+                <ul id="words">
+                <!-- Results will be dynamically added here -->
+                </ul>
             </div>
         </div>
     </main>

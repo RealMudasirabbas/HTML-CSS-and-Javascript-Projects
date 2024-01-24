@@ -3,9 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: #80BCBD;
 }
+
+
+
 .dictionary {
     display: flex;
     justify-content: center;
@@ -19,6 +23,7 @@ body {
     border-radius: 40px;
     margin: 40%;
     margin-top: 100px;
+    
 }
 
 h1,
@@ -32,7 +37,14 @@ button {
     color: darkolivegreen;
     margin-bottom: 5%;
 }
+
 button {
     background-color:#2597DF;
     color:white;
+}
+
+#words {
+    display: flex;
+    font-size: 30px;
+    color: cadetblue;
 }
