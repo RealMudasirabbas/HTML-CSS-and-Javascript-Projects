@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Added to include padding and border in the element's total width and height */
+}
+
+body {
+    background-color: #211951;
+    font-family: Arial, sans-serif; /* Added a fallback font-family */
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9B4444;
+    margin-top: 60px;
+    gap: 10px;
+    font-size: 28px; /* Adjusted font size */
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Changed flex-direction to column */
+    margin-top: 20px; /* Added margin-top to create space between h1 and form */
+}
+
+input {
+    width: 60%; /* Adjusted width */
+    height: 40px;
+    margin: 10px;
+    padding: 0 15px; /* Added padding for better input field appearance */
+    border: 1px solid #ccc; /* Added border for input field */
+    border-radius: 25px;
+    font-size: 20px; /* Adjusted font size */
+}
+
+button {
+    width: 20%; /* Adjusted width */
+    height: 50px;
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px; /* Adjusted font size */
+    background-color: #9B4444; /* Changed background color */
+    color: #fff; /* Changed text color */
+    cursor: pointer; /* Added cursor style */
+    transition: background-color 0.3s; /* Added transition effect */
+}
+
+button:hover {
+    background-color: #722828; /* Darker color on hover */
+}
+
+
+ul {
+    list-style-type: none; /* Removes the default bullet points */
+    padding: 0;
+    margin: 20px 0; /* Added margin for better spacing */
+    width: 60%; /* Adjusted width */
+}
+
+ul li {
+    background-color: #9B4444; /* Changed background color */
+    color: #fff; /* Changed text color */
+    padding: 10px 20px; /* Added padding */
+    margin-bottom: 10px; /* Added margin between list items */
+    border-radius: 5px; /* Added border radius for rounded corners */
+    font-size: 18px; /* Adjusted font size */
+}
+
+ul li:hover {
+    background-color: #722828; /* Darker color on hover */
+    cursor: pointer; /* Added cursor style */
+    transition: background-color 0.3s; /* Added transition effect */
+}
